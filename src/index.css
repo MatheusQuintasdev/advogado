@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Outfit', 'Montserrat', system-ui, -apple-system, sans-serif;
+  }
+
+  .font-serif-luxury {
+    font-family: 'Marcellus', 'Cinzel', Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+
+  .font-brand-roman {
+    font-family: 'Cinzel', serif;
+  }
+
+  .font-brand-sans {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+@keyframes goldShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer-gold {
+  background: linear-gradient(90deg, transparent, rgba(197, 160, 89, 0.15), transparent);
+  background-size: 200% 100%;
+  animation: goldShimmer 4s infinite linear;
+}
+
+/* Custom scrollbar for law firm site */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b101d;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a880;
+}
